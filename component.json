@@ -1,0 +1,9 @@
+{
+  "name": "bdo-events",
+  "repo": "bdo-labs/directive-bdo-events",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": ["lib/index.js"],
+  "templates": ["lib/template.html"]
+}

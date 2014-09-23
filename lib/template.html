@@ -1,0 +1,24 @@
+<!-- bdo-tasks.html -->
+<table>
+  <thead>
+    <tr>
+      <th colspan="5" ng-transclude="ng-transclude"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="task in tasks">
+      <td class="status">
+        <icon name="circle" ng-class="'status-'+task.status"></icon>
+      </td>
+      <td class="title">{{task.title}}</td>
+      <td class="project">{{task.project}}</td>
+      <td class="due">
+        <time datetime="{{task.due}}">{{task.due | date: 'short'}}</time>
+      </td>
+      <td class="assignee">
+        <user-photo email="{{task.assignee.email}}"></user-photo>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End bdo-tasks.html -->
